@@ -19,6 +19,8 @@ import {
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import RestaurantListElement from '@components/RestaurantListElement/RestaurantListElement';
+import SearchBar from '@components/SearchBar/SearchBar';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -40,7 +42,16 @@ const App = () => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Text>XDXD</Text>
+          <Text>Components:</Text>
+          <SearchBar />
+          <RestaurantListElement
+            title={"McDonald's - Katowice PKP"}
+            score={4.2}
+            deliveryPrice={2}
+            deliveryCurrency={'$'}
+            shortestDeliveryTime={15}
+            distance={1.2}
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
