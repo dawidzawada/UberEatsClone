@@ -11,6 +11,8 @@ module.exports = {
           '@globals': './src/globals',
           '@icons': './src/icons',
           '@components': './src/components',
+          '@navigation': './src/navigation',
+          '@screens': './src/screens',
         },
       },
     ],

@@ -39,7 +39,7 @@ const stylesDef: IStyles = {
   }),
   scoreContainer: {
     backgroundColor: Colors.grey,
-    paddingVertical: 8,
+    paddingVertical: 7,
     paddingHorizontal: 6,
     borderRadius: 100,
     position: 'absolute',
